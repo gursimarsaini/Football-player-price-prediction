@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Market Value</title>
+</head>
+<body>
+    <h1>Upload the csv file or fill details to get prediction</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>From CSV file</legend>
+            <input type="file" name="csv" id="csv">
+            <br/><br/>
+            <input type="submit" value="Upload and predict">
+        </fieldset>
+    </form>
+    <form method='POST'>
+        <fieldset>
+            <legend>Or, fill in the details</legend>
+            <label for="name">Name: </label>    
+            <input type="text" name="name" id="name" required>
+            <label for="position">Position Number: </label>
+            <input type="number" name="position" id="position" required><br/><br/>
+            <label for="page_views">Page Views: </label>
+            <input type="number" name="page_views" id="page_views" required>
+            <label for="fpl_value">FPL Value: </label>
+            <input type="text" name="fpl_value" id="fpl_value" required><br/><br/>
+            <label for="fpl_sel">FPL selection Percent: </label>
+            <input type="text" name="fpl_sel" id="fpl_sel" required>
+            <label for="fpl_points">FPL Points: </label>
+            <input type="number" name="fpl_points" id="fpl_points" required><br/><br/>
+            <label for="region">Region Number: </label>
+            <input type="text" name="region" id="region" required>
+            <label for="nation">Nationality: </label>
+            <input type="text" name="nation" id="nation" required><br/><br/>
+            <label for="club_id">Club Id: </label>
+            <input type="number" name="club_id" id="club_id" required>
+            <label for="age_cat">Age category: </label>
+            <input type="number" name="age_cat" id="age_cat" required><br/><br/>
+            <label for="new_foreign">New Foreign: </label>
+            Yes: <input type="radio" name="new_foreign" value=1 required>
+            No: <input type="radio" name="new_foreign" value=0>
+            <label for="big_club">Big Club: </label>
+            Yes <input type="radio" name="big_club" value=1 required>
+            No <input type="radio" name="big_club" value=0><br/><br/>
+            <label for="new_signing">New Signing</label>
+            Yes <input type="radio" name="new_signing" value=1 required>
+            No <input type="radio" name="new_signing" value=0>
+            <br/><br/>
+            <input type="submit" value="Predict">
+        </fieldset>
+    </form>
+</body>
+</html>
