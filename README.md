@@ -3,4 +3,4 @@
 
 # To deploy the best model
 * It is the Random Forest according to our implementation
-* tweak the BEST_MODEL variable in the main.py file and run it
+* tweak the BEST_MODEL variable in the main.py file and run it.
